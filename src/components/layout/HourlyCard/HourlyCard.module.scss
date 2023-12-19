@@ -1,0 +1,36 @@
+@import "../../../stylesheets/layout/module";
+@import "../../../stylesheets/animations/module";
+@import "../../../stylesheets/typography/module";
+
+.HourlyCard {
+  @include flex-col;
+  align-items: center;
+  transition: 250ms;
+}
+
+.HourlyCard:hover {
+  @include up-5px;
+}
+
+.HourlyTime {
+  @include text-small;
+}
+
+.HourlyWind {
+  @include text-small;
+}
+
+.HourlyTemp {
+  @include text-regular;
+}
+
+@media (max-width: 750px) {
+  .HourlyCard {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .HourlyCard:hover {
+    transform: none;
+  }
+}

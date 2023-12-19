@@ -1,0 +1,44 @@
+.text-secondary {
+  color: #808080;
+}
+
+.text-blue {
+  color: #6f92c7;
+}
+
+@mixin ta-center {
+  text-align: center;
+}
+
+@mixin ta-right {
+  text-align: right;
+}
+
+@mixin ta-left {
+  text-align: left;
+}
+
+@mixin text-small {
+  font-size: 13px;
+}
+
+@mixin text-regular {
+  font-size: 20px;
+}
+
+@mixin text-large {
+  font-size: 30px;
+}
+
+@mixin text-giant {
+  font-size: 80px;
+}
+
+.text-center {
+  @include ta-center;
+}
+
+h2 {
+  @include text-large;
+  @include ta-center;
+}

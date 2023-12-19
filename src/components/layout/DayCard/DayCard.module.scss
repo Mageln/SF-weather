@@ -1,0 +1,30 @@
+@import "../../../stylesheets/layout/module";
+@import "../../../stylesheets/typography/module";
+
+.DayCard {
+  @include flex-col;
+  align-items: center;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 250ms;
+}
+
+.DayCard:hover {
+  transform: translate(0px, -5px);
+}
+
+.DayCard__day {
+  @include ta-center;
+  font-size: 15px;
+}
+
+.DayCard__temp {
+  @include ta-center;
+  font-size: 25px;
+}
+
+.DayCard__type {
+  @include ta-center;
+}
+

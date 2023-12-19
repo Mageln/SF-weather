@@ -1,0 +1,33 @@
+@import "../../../stylesheets/layout/module";
+@import "../../../stylesheets/typography/module";
+@import "../../../stylesheets/animations/module";
+
+.TabSelect {
+  @include d-flex;
+  margin-bottom: 15px;
+  justify-content: space-around;
+}
+
+.TabSelect__item {
+  @include text-regular;
+  transition: 250ms;
+}
+.TabSelect__item:hover {
+  @include up-5px;
+}
+
+.TabSelect__item input {
+  all: unset;
+}
+
+.TabSelect__item label {
+  cursor: pointer;
+}
+
+.TabSelect__item input[type="radio"]:checked + label {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  height: 2px;
+  background-color: $gray;
+}
